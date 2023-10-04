@@ -1,16 +1,19 @@
-export const App = () => {
+import { Route, Routes } from 'react-router-dom';
+import { Agro } from './Agro/Agro';
+import { Form } from './Form/Form';
+import { HomePage } from './HomePage/HomePage';
+import { Layout } from './Layout/Layout';
+import { Weather } from './Weather/Weather';
+
+export function App() {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+   <Routes>
+    <Route path='/' element={<Layout/>}>
+    <Route index element={<HomePage/>} />
+    <Route path='/agro-crops' element={<Agro/>}/>
+    <Route path='/weather' element={<Weather/>}/>
+    <Route path='/form' element={<Form/>}/>
+    </Route>
+   </Routes>
   );
 };

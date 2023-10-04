@@ -1,0 +1,32 @@
+.rye{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(183, 182, 182, 0.62);
+    padding-top: 20px;
+}
+.cont{
+    margin-left: 30px;
+}
+.img{
+    width: 500px;
+    height: 500px;
+    border-radius: 12px;
+    margin: 20px;
+    margin-right: 0;
+}
+.text{
+    font-size: 20px;
+    width: 600px;
+    color: black;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.title{
+    font-size: 34px;
+    margin-left: 30px;
+}
