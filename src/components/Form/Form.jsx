@@ -11,7 +11,7 @@ export const Form = () => {
    const v = data.value;
        setState({s, v});
     }
-    
+    console.log(state);
 
     return(
         <div className={css.flex}>
@@ -31,5 +31,5 @@ export const Form = () => {
         </div>
         </div>
     )
-    
+
 }
